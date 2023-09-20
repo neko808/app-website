@@ -1,9 +1,16 @@
+//Styles
+import "./styles/app.scss";
+
+//import Pages
+import AboutUs from './pages/AboutUs';
+
 
 function App() {
   return (
     <div className="App">
-      <h2>Hellooo</h2>
-      
+      <AboutUs />
+     
+
     </div>
   );
 }
