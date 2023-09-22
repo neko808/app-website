@@ -1,29 +1,41 @@
 import React from 'react';
 import light from '../img/light.jpg';
+//import styled
+import styled from 'styled-components';
+
+import { Layout, Description, Image, Hide } from '../styles';
 
 function About() {
   return (
-    <div>
-        <div className='description'>
+    <Layout>
+        <Description>
             <div className="title">
-                <div className="hide">
+                <Hide>
                     <h2>We work to make</h2>
-                </div>
-                <div className="hide">
+                </Hide>
+                <Hide>
                     <h2>your <span>dreams</span> come</h2>
-                </div>
-                <div className="hide">
+                </Hide>
+                <Hide>
                     <h2>true</h2>
-                </div>
+                </Hide>
             </div>
             <p>Contact us for any information. We have the things you need.</p>
             <button>Contact us</button>
-        </div>
-        <div className="image">
+        </Description>
+        <Image>
             <img src={light} alt="light with black" />
-        </div>
-    </div>
+        </Image>
+    </Layout>
   )
 }
+
+
+//Styled components
+
+
+
+
+
 
 export default About
